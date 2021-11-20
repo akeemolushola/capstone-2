@@ -56,8 +56,10 @@ nav ul {
 }
 nav ul a, nav ul a:visited {
     color: #fff;
-    padding: 0.8rem 1.8rem;
+    padding: .8rem 1.8rem;
     transition: all .5s;
+    font-family: Barlow, Arial, sans-serif;
+    z-index: 10;
 }
 nav ul a:hover {
     border-radius: 20px;
@@ -299,8 +301,8 @@ svg {
    }
    .nav-ul.show a {
        color: hsl(212, 27%, 19%);
-       font-family: Barlow, Arial, sans-serif;
-       padding: 1rem;
+       /* font-family: Barlow, Arial, sans-serif;
+       padding: 1rem; */
    }
 
    .header-container {
