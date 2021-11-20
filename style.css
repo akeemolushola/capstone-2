@@ -28,15 +28,25 @@
 nav {
     padding: 1rem 4rem;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 nav ul {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
+.hamburger {
+    border: 0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
 .logo {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -215,9 +225,6 @@ svg {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.img-holder {
-    
-}
 .img-holder > img {
     width: 100%;
     height: 100%;
@@ -269,19 +276,40 @@ svg {
 
 /* -------------Responsive ----------------- */
 @media only screen and (max-width: 600px) and (min-width: 320px) {
-   nav {
+    nav {
+        padding: 1rem;
+        justify-content: space-between;
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+    .hamburger {
+        display: block;
+    }
+   .nav-ul {
        display: none;
+       flex-direction: column;
+       width: 100%;
    }
+   .nav-ul.show {
+       margin: 2rem;
+       display: flex;
+       background-color: white;
+       padding: 1rem;
+   }
+   .nav-ul.show a {
+       color: hsl(212, 27%, 19%);
+       font-family: Barlow, Arial, sans-serif;
+       padding: 1rem;
+   }
+
    .header-container {
        height: 80vh;
    }
    .hero-text {
        font-size: 1.3rem;
+       padding: 3rem;
    }
-   
-    /* main {
-       min-width: 320px;
-   } */
     .main-container {
         display: flex;
         flex-direction: column;
