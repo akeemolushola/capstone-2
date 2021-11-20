@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    Font-size: 18px;
+}
+
+/* -----------Header------------------- */
+.header-container {
+    color: #fff;
+    height: 100vh;
+    background-color: rgb(202, 158, 101);
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+nav ul a, nav ul a:visited {
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    transition: all .5s;
+}
+nav ul a:hover {
+    border-radius: 20px;
+    background-color: #ffffff7c;
+}
+.hero-text {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-family: Fraunces, serif;
+}
+svg {
+    position: absolute;
+    left: 50%;
+    top: 50%
+}
+
+/* ---------------Main Section------------- */
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);   
+}
+.text-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 4rem;
+}
+.header-text {
+    font-family: Fraunces, serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    padding: 2rem 4rem;
+    color: hsl(212, 27%, 19%)
+}
+.text-info {
+    padding: 0 4rem;
+    font-family: Barlow, Arial, sans-serif;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: hsl(210, 4%, 67%)
+}
+.text-holder a {
+    padding: 2rem 4rem;
+    font-family: Fraunces, serif;
+    font-weight: 800;
+    color: hsl(212, 27%, 19%);
+    position: relative;
+    transition: all .3s;
+}
+.text-holder a::after {
+    content: "";
+    position: absolute;
+    left: 58px;
+    bottom: 0;
+    right: 0;
+    top: 50px;
+    background-color: rgba(255, 206, 47, 0.377);
+    width: 142px;
+    height: 13px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.text-holder a:hover::after{
+    background-color: rgb(255, 206, 47);;
+}
+.er {
+    display: none;
+}
+.first-img {
+    background-image: url(images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.second-img {
+    background-image: url(images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+.graphic-container {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    color: hsl(167, 40%, 24%)
+}
+.photo-container {
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: hsl(198, 62%, 26%);
+}
+.graphic-container, .photo-container {
+    padding: 4rem;
+    text-align: center;
+}
+.graphics-header {
+    font-family: Fraunces, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 17rem 4rem 0rem 4rem;
+}
+.graphics-text {
+    padding: 1.5rem 4rem;
+    font-family: Barlow, Arial, sans-serif;
+    font-weight: 600;
+}
+
+/* -----------Client Testimonial-------------- */
+.testimonial-header {
+    text-align: center;
+    color: hsl(232, 10%, 55%);
+    padding-top: 6rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+}
+.client-testimonial {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 2rem;
+}
+.testimonial-container {
+    padding: 0 3rem;
+    text-align: center;
+    font-family: Barlow, Arial, sans-serif;
+}
+.avatar {
+    padding-bottom: 3.5rem;
+}
+.avatar > img {
+    width: 4rem;
+    border-radius: 50%;
+}
+.testimonial {
+    line-height: 1.5rem;
+    color:hsl(232, 10%, 55%);
+    padding-bottom: 3rem
+}
+.testimonial-name {
+    font-family: Fraunces, serif;;
+    font-weight: 600;
+    padding-bottom:.3rem;
+}
+.testimonial-position {
+    font-weight: 800;
+    font-size: .6rem;
+}
+
+
+
+/* ----------Image Section---------- */
+.imgs {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.img-holder {
+    
+}
+.img-holder > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*------------------ Footer -------------------- */
+.footer-container {
+    /* height: 50vh; */
+    padding: 6rem;
+    color: hsl(168, 34%, 41%);
+    background-color: hsl(168, 47%, 71%) ;
+    text-align: center;
+}
+.footer-logo {
+    text-align: center;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-nav ul {
+    display: flex;
+    height: auto;
+}
+.footer-nav ul li {
+    font-family: Barlow, Arial, sans-serif;;
+    padding: 3rem 1.5rem 0 1.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.footer-nav ul li:hover {
+    color: #fff;
+}
+.icons {
+    padding-top:4rem ;
+}
+.icons img {
+    padding: 0 1rem;
+    cursor: pointer;
+}
+.icons img:hover {
+    mix-blend-mode:color-dodge;
+}
+
+
+/* -------------Responsive ----------------- */
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+   header {
+       display: none;
+   }
+   
+    /* main {
+       min-width: 320px;
+   } */
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        /* max-width: 320px; */
+        margin: 0;
+        padding: 0;
+    }
+    .text-holder {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .header-text {
+        padding: .8rem;
+        font-size: 1.5rem;
+    }
+    .text-info {
+        padding: 1rem 2rem;
+    }
+    .text-holder a {
+        padding: 2rem 1rem;
+    }
+    .text-holder a::after {
+        left: 140px;
+    }
+    .first-img, .second-img {
+        height: 300px;
+        width: 100%;
+    }
+    .ar{
+        display: none;
+    } 
+    .graphic-container, .photo-container {
+        padding: .5rem;
+    }
+
+    .graphics-header {
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 25rem 2rem 0rem 2rem;
+    }
+    .graphics-text {
+        padding: .5rem 1rem 5rem 1rem;
+        font-weight: 600;
+    }
+    .testimonial-header {
+        font-size: 1.3rem;
+        padding-top: 4rem;
+    }
+    .client-testimonial {
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+    }
+    .testimonial-container {
+        padding: 0 2rem;
+    }
+    .avatar {
+        padding: 1rem 0;
+    }
+    .testimonial-name {
+        padding-bottom: .7rem;
+    }
+    .testimonial-position {
+        padding-bottom: 1rem;
+    }
+    .imgs {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-container {
+        padding: 1rem;
+        height: auto;
+    }
+    .footer-nav ul {
+        max-width: 320px;
+    }
+    .footer-nav ul li {
+        padding: 3rem .5rem 0 .5rem;
+        font-size: .9rem;
+        cursor: pointer;
+    }
+    .icons {
+        padding: 4rem 0;
+    }
+}
